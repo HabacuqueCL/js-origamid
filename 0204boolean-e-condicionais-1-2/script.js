@@ -77,3 +77,75 @@ if(!!'') //false
 10 != 15; //true
 10 != '10'; //false
 10 !== '10'; //true
+
+//OPERADORES LÓGICOS &&
+//&& Compara se uma expressão e a outra é verdadeira
+true && true; // true
+true && false; // false
+false && true; // false
+'Gato' && 'Cão'; // 'Cão'
+(5 - 5) && (5 + 5); // 0
+'Gato' && false; // false
+(5 >= 5) && (3 < 6); // true
+//Se ambos os valores forem true ele irá retornar o último valor verificado Se algum valor for false ele irá retornar o mesmo e não irá continuar a verificar os próximos
+
+//OPERADORES LÓGICOS ||
+//|| Compara se uma expressão ou outra é verdadeira
+true || true; // true
+true || false; // true
+false || true; // true
+'Gato' || 'Cão'; // 'Gato'
+(5 - 5) || (5 + 5); // 10
+'Gato' || false; // Gato
+(5 >= 5) || (3 < 6); // true
+//Retorna o primeiro valor true que encontrar
+
+//EXERCICIOS
+// Verifique se a sua idade é maior do que a de algum parente
+// Dependendo do resultado coloque no console 'É maior', 'É igual' ou 'É menor'
+var minhaIdade = 29;
+var idadeParente = 39;
+
+if (minhaIdade > idadeParente) {
+  console.log('E maior');
+} else if (minhaIdade === idadeParente) {
+  console.log('E igual');
+} else {
+  console.log('E menor');
+}
+
+// Qual valor é retornado na seguinte expressão?
+var expressao = (5 - 2) && (5 - ' ') && (5 - 2); //3
+
+// Verifique se as seguintes variáveis são Truthy ou Falsy
+var nome = 'Andre';
+var idade = 28;
+var possuiDoutorado = false;
+var empregoFuturo;
+var dinheiroNaConta = 0;
+
+console.log(!!nome, !!idade, !!possuiDoutorado, !!empregoFuturo, !!dinheiroNaConta);
+
+// Compare o total de habitantes do Brasil com China (valor em milhões)
+var brasil = 207;
+var china = 1340;
+
+if(brasil > china) {
+  console.log('Brasil tem mais habitantes');
+} else {
+  console.log('Brasil tem menos habitantes');
+}
+
+// O que irá aparecer no console?
+if(('Gato' === 'gato') && (5 > 2)) {
+  console.log('Verdadeiro');
+} else {
+  console.log('Falso');
+} //Falso
+
+// O que irá aparecer no console?
+if(('Gato' === 'gato') || (5 > 2)) {
+  console.log('Gato' && 'Cão');
+} else {
+  console.log('Falso');
+} //Cao

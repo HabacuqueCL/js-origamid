@@ -1,8 +1,5 @@
-let valorIgualADez = 10
-
-if (valorIgualADez) {
-  10 + 1
-  console.log(valorIgualADez)
+if(('Gato' === 'gato') || (5 > 2)) {
+  console.log('Gato' && 'Cão');
 } else {
-  console.log('nao e igual a 10');
+  console.log('Falso');
 }
